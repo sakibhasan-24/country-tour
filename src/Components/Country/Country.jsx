@@ -1,7 +1,7 @@
 import "./Country.css";
 
-export default function Country({ countryData }) {
-  console.log(countryData);
+export default function Country({ countryData, handleVisitedCountry }) {
+  // console.log(countryData.name);
   return (
     <div className="country">
       <div className="image-country">
@@ -14,7 +14,12 @@ export default function Country({ countryData }) {
         <div className="border-country">
           <p>{countryData.borders ? countryData.borders + " " : "not found"}</p>
         </div>
-        <button className="visited-country-btn">Visited Country</button>
+        <button
+          onClick={() => handleVisitedCountry(countryData)}
+          className="visited-country-btn"
+        >
+          Visited Country
+        </button>
       </div>
     </div>
   );
