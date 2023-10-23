@@ -1,18 +1,47 @@
 html {
   font-size: 62.5%;
 }
+
 .country {
-  border: 3px solid gray;
-  margin: 4rem;
+  width: 37rem;
+  border: 3px solid rgb(123, 117, 117);
   border-radius: 20px;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.9);
-  cursor: pointer;
+
+  margin: 3rem 1rem;
+}
+.image-country {
+  width: 100%;
 }
 .image-country img {
-  width: 80%;
-  padding: 2rem 5rem;
+  width: 100%;
+  border-radius: 20px;
 }
 .country-info {
   font-size: 2rem;
-  padding: 2rem 4rem;
+  width: 100%;
+  padding: 2rem 0.5rem;
+}
+.border-country {
+  word-wrap: break-word;
+
+  width: 80%;
+  border: 5px solid blue;
+  border-radius: 20px;
+}
+.visited-country-btn {
+  margin: 2rem 5rem;
+  padding: 2rem 6rem;
+  border-radius: 20px;
+  border: 0;
+  background-color: orangered;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  .country {
+    width: 80%;
+  }
 }
