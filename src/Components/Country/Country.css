@@ -1,0 +1,18 @@
+html {
+  font-size: 62.5%;
+}
+.country {
+  border: 3px solid gray;
+  margin: 4rem;
+  border-radius: 20px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+.image-country img {
+  width: 80%;
+  padding: 2rem 5rem;
+}
+.country-info {
+  font-size: 2rem;
+  padding: 2rem 4rem;
+}
